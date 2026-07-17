@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yahir Aguirre García — Ingeniero en Mecatrónica</title>
+  <meta name="description" content="Portafolio de Yahir Aguirre García. Ingeniero en Mecatrónica especializado en diseño mecánico, automatización y robótica." />
+  <meta name="author" content="Yahir Aguirre García" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yahir Aguirre García — Mecatrónica" />
+  <meta property="og:description" content="Diseño mecánico · Automatización · Robótica" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0a0e14',
+            surface: '#12171f',
+            surface2: '#1a2029',
+            border: '#232b38',
+            text: '#e6edf3',
+            muted: '#8b95a7',
+            accent: '#ff7a1a',      // orange (industrial)
+            steel: '#4a9eff',       // steel blue (tech)
+            success: '#3fb950',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-bg text-text font-sans antialiased">
+
+  <!-- Grid background -->
+  <div class="fixed inset-0 -z-10 opacity-[0.15] pointer-events-none bg-grid"></div>
+
+  <!-- NAVBAR -->
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-bg/70 border-b border-border/50 transition-all">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2 group">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-steel flex items-center justify-center font-bold text-bg text-lg">Y</div>
+        <span class="font-mono text-sm text-muted group-hover:text-text transition">yahir.aguirre</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#about" class="hover:text-accent transition">Sobre mí</a>
+        <a href="#projects" class="hover:text-accent transition">Proyectos</a>
+        <a href="#skills" class="hover:text-accent transition">Skills</a>
+        <a href="#divulgacion" class="hover:text-accent transition">Divulgación</a>
+        <a href="#experience" class="hover:text-accent transition">Experiencia</a>
+        <a href="#contact" class="hover:text-accent transition">Contacto</a>
+      </div>
+      <a href="assets/cv/Yahir_Aguirre_Garcia_CV.pdf" download class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-bg font-semibold text-sm hover:bg-accent/90 transition">
+        <i data-lucide="download" class="w-4 h-4"></i> CV
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="top" class="min-h-screen flex items-center pt-24 pb-16 px-6 relative">
+    <div class="max-w-6xl mx-auto w-full grid md:grid-cols-5 gap-10 items-center">
+      <div class="md:col-span-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface/50 font-mono text-xs text-muted mb-6">
+          <span class="w-2 h-2 rounded-full bg-success animate-pulse"></span>
+          Disponible para prácticas profesionales
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight mb-6">
+          Yahir<br />
+          <span class="bg-gradient-to-r from-accent via-orange-400 to-steel bg-clip-text text-transparent">Aguirre García</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-muted mb-4">Ingeniero en Mecatrónica</p>
+        <p class="text-base md:text-lg text-muted/80 max-w-2xl mb-8 leading-relaxed">
+          Diseño mecánico · Automatización · Robótica. Llevo el ciclo completo de ingeniería del concepto al prototipo físico funcional — <span class="text-text">12+ proyectos técnicos entregados con reporte formal</span>.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#projects" class="px-6 py-3 rounded-lg bg-accent text-bg font-semibold hover:bg-accent/90 transition inline-flex items-center gap-2">
+            Ver proyectos <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#contact" class="px-6 py-3 rounded-lg border border-border hover:border-accent hover:text-accent transition inline-flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4"></i> Contáctame
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-4 mt-12 max-w-md">
+          <div>
+            <div class="font-mono text-2xl md:text-3xl font-bold text-accent">9.16</div>
+            <div class="text-xs text-muted mt-1">Promedio UPAEP</div>
+          </div>
+          <div>
+            <div class="font-mono text-2xl md:text-3xl font-bold text-steel">12+</div>
+            <div class="text-xs text-muted mt-1">Proyectos técnicos</div>
+          </div>
+          <div>
+            <div class="font-mono text-2xl md:text-3xl font-bold text-text">590</div>
+            <div class="text-xs text-muted mt-1">TOEFL ITP</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portrait / visual -->
+      <div class="md:col-span-2 relative">
+        <div class="aspect-square rounded-2xl bg-gradient-to-br from-accent/20 via-surface to-steel/20 border border-border overflow-hidden relative group">
+          <!-- Placeholder for portrait: reemplaza por tu foto -->
+          <img src="assets/img/portrait.jpg" alt="Yahir Aguirre" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden items-center justify-center flex-col gap-2 text-muted">
+            <i data-lucide="user-round" class="w-16 h-16"></i>
+            <span class="text-xs font-mono">assets/img/portrait.jpg</span>
+          </div>
+          <!-- Overlay tech corners -->
+          <div class="absolute top-3 left-3 w-6 h-6 border-t-2 border-l-2 border-accent"></div>
+          <div class="absolute top-3 right-3 w-6 h-6 border-t-2 border-r-2 border-accent"></div>
+          <div class="absolute bottom-3 left-3 w-6 h-6 border-b-2 border-l-2 border-steel"></div>
+          <div class="absolute bottom-3 right-3 w-6 h-6 border-b-2 border-r-2 border-steel"></div>
+        </div>
+        <div class="absolute -bottom-4 -right-4 hidden md:block bg-surface border border-border rounded-lg px-4 py-2 font-mono text-xs shadow-xl">
+          <span class="text-muted">location:</span> <span class="text-accent">Puebla, MX</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-muted hover:text-accent transition animate-bounce">
+      <i data-lucide="chevron-down" class="w-6 h-6"></i>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-3 mb-10">
+        <span class="font-mono text-sm text-accent">01.</span>
+        <h2 class="text-3xl md:text-4xl font-bold">Sobre mí</h2>
+        <div class="flex-1 h-px bg-border"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-2 text-lg text-muted leading-relaxed space-y-4">
+          <p>
+            Soy estudiante de <span class="text-text font-medium">Ingeniería Mecatrónica en la UPAEP</span> con promedio de 9.16. Me apasiona el momento en que un diseño en CAD deja de ser un archivo y empieza a moverse en el mundo real.
+          </p>
+          <p>
+            Domino el ciclo completo: <span class="text-accent">diseño mecánico en SolidWorks</span>, simulación <span class="text-accent">FEA/CFD</span>, manufactura CNC con <span class="text-accent">Esprit</span>, fabricación en taller, e integración de <span class="text-accent">electrónica y control</span> con ESP32, Raspberry Pi, PLC y FANUC.
+          </p>
+          <p>
+            He liderado equipos técnicos como subcoordinador de electrónica y llevado más de seis proyectos del concepto al prototipo físico funcional. Busco prácticas profesionales donde poder resolver problemas reales de ingeniería.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <div class="p-4 rounded-xl border border-border bg-surface">
+            <div class="text-xs text-muted font-mono mb-1">FORMACIÓN</div>
+            <div class="font-semibold">Ing. Mecatrónica</div>
+            <div class="text-sm text-muted">UPAEP · 2020–presente</div>
+          </div>
+          <div class="p-4 rounded-xl border border-border bg-surface">
+            <div class="text-xs text-muted font-mono mb-1">IDIOMAS</div>
+            <div class="font-semibold">Inglés avanzado</div>
+            <div class="text-sm text-muted">TOEFL ITP 590</div>
+          </div>
+          <div class="p-4 rounded-xl border border-border bg-surface">
+            <div class="text-xs text-muted font-mono mb-1">UBICACIÓN</div>
+            <div class="font-semibold">Puebla, México</div>
+            <div class="text-sm text-muted">Abierto a reubicación</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-24 px-6 bg-surface/30">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="font-mono text-sm text-accent">02.</span>
+        <h2 class="text-3xl md:text-4xl font-bold">Proyectos</h2>
+        <div class="flex-1 h-px bg-border"></div>
+      </div>
+      <p class="text-muted mb-12 max-w-2xl">Del CAD al hardware funcional. Cada proyecto integra diseño mecánico, electrónica y control.</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+        <!-- Cards inyectadas por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-3 mb-10">
+        <span class="font-mono text-sm text-accent">03.</span>
+        <h2 class="text-3xl md:text-4xl font-bold">Skills técnicas</h2>
+        <div class="flex-1 h-px bg-border"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4" id="skills-grid">
+        <!-- Inyectado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVULGACIÓN -->
+  <section id="divulgacion" class="py-24 px-6 bg-surface/30">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="font-mono text-sm text-accent">04.</span>
+        <h2 class="text-3xl md:text-4xl font-bold">Divulgación técnica</h2>
+        <div class="flex-1 h-px bg-border"></div>
+      </div>
+      <p class="text-muted mb-12 max-w-2xl">Contenido educativo y de comunicación técnica. Porque saber ingeniería no sirve si no la puedes explicar.</p>
+
+      <div class="grid md:grid-cols-2 gap-6" id="divulgacion-grid">
+        <!-- Inyectado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-24 px-6 bg-surface/30">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-3 mb-12">
+        <span class="font-mono text-sm text-accent">05.</span>
+        <h2 class="text-3xl md:text-4xl font-bold">Experiencia</h2>
+        <div class="flex-1 h-px bg-border"></div>
+      </div>
+
+      <div class="relative space-y-8" id="experience-list">
+        <!-- Inyectado por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <span class="font-mono text-sm text-accent">06.</span>
+        <h2 class="text-3xl md:text-4xl font-bold">Trabajemos juntos</h2>
+      </div>
+      <p class="text-lg text-muted mb-10 max-w-xl mx-auto">
+        Estoy buscando prácticas profesionales en <span class="text-text">diseño mecánico, automatización o robótica</span>. Si tienes un proyecto o vacante, hablemos.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="mailto:yahir.aguirre.g@gmail.com" class="px-6 py-3 rounded-lg bg-accent text-bg font-semibold hover:bg-accent/90 transition inline-flex items-center gap-2">
+          <i data-lucide="mail" class="w-4 h-4"></i> yahir.aguirre.g@gmail.com
+        </a>
+        <a href="https://wa.me/522224322202" target="_blank" rel="noopener" class="px-6 py-3 rounded-lg border border-border hover:border-accent hover:text-accent transition inline-flex items-center gap-2">
+          <i data-lucide="phone" class="w-4 h-4"></i> WhatsApp
+        </a>
+        <a href="assets/cv/Yahir_Aguirre_Garcia_CV.pdf" download class="px-6 py-3 rounded-lg border border-border hover:border-accent hover:text-accent transition inline-flex items-center gap-2">
+          <i data-lucide="file-text" class="w-4 h-4"></i> Descargar CV
+        </a>
+      </div>
+
+      <div class="flex items-center justify-center gap-6 mt-12 text-muted">
+        <a href="https://linkedin.com/in/yahiraguirre" target="_blank" rel="noopener" class="hover:text-accent transition" aria-label="LinkedIn">
+          <i data-lucide="linkedin" class="w-6 h-6"></i>
+        </a>
+        <a href="https://github.com/yahiraguirre" target="_blank" rel="noopener" class="hover:text-accent transition" aria-label="GitHub">
+          <i data-lucide="github" class="w-6 h-6"></i>
+        </a>
+        <a href="mailto:yahir.aguirre.g@gmail.com" class="hover:text-accent transition" aria-label="Email">
+          <i data-lucide="mail" class="w-6 h-6"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 px-6 border-t border-border">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted">
+      <div class="font-mono">© 2026 Yahir Aguirre García</div>
+      <div class="font-mono text-xs">Diseñado y construido en Puebla, MX 🇲🇽</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
