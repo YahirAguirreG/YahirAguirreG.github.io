@@ -20,7 +20,7 @@ const PROJECTS = [
     subtitle: 'Robótica Industrial · Otoño 2025',
     period: '2025',
     featured: true,
-    media: { type: 'video', src: 'assets/video/fanuc.mp4', poster: 'assets/img/projects/fanuc.jpg' },
+    media: { type: 'youtube', src: 'https://www.youtube.com/embed/tBPZv5PiXts', poster: 'assets/img/projects/fanuc.jpg' },
     summary: 'Programación y operación de dos celdas robóticas industriales para aplicaciones de soldadura. Comparativa entre el FANUC M-20iA y el Yaskawa Motoman: configuración de coordenadas de usuario/herramienta, trayectorias, I/O y rutinas de soldadura.',
     bullets: [
       'Teach Pendant en ambos controladores (FANUC R-30iB y Yaskawa DX)',
@@ -29,6 +29,10 @@ const PROJECTS = [
       'Integración con I/O digitales y validación por simulación previa',
     ],
     tags: ['FANUC', 'Yaskawa', 'Soldadura robótica', 'Teach Pendant', 'Robótica industrial'],
+    links: [
+      { label: 'Video FANUC M-20iA', href: 'https://youtu.be/tBPZv5PiXts', icon: 'youtube' },
+      { label: 'Video Yaskawa Motoman', href: 'https://youtu.be/NrUj1Anvz00', icon: 'youtube' },
+    ],
     docs: [],
   },
 
@@ -38,7 +42,7 @@ const PROJECTS = [
     subtitle: 'Proyecto final · Manufactura Asistida por Computadora',
     period: 'Primavera 2025',
     featured: true,
-    media: { type: 'video', src: 'assets/video/esprit.mp4', poster: 'assets/img/projects/esprit.jpg' },
+    media: { type: 'youtube', src: 'https://www.youtube.com/embed/211OaUpEZWM', poster: 'assets/img/projects/esprit.jpg' },
     summary: 'Diseño y manufactura de una pieza 3D compleja con 6 caras maquinadas — planos inclinados, barrenos, ranuras y pockets. Estrategias five-axis en ESPRIT para reducir el volteo de la pieza a uno solo, validado por simulación (comparison en verde).',
     bullets: [
       'Operaciones: pocketing, contouring, deburring, drilling y five-axis simultaneous',
@@ -47,6 +51,9 @@ const PROJECTS = [
       'Generación de código G y validación integral por simulación',
     ],
     tags: ['ESPRIT', 'CNC 5 ejes', 'CAM', 'Manufactura'],
+    links: [
+      { label: 'Video del maquinado', href: 'https://youtu.be/211OaUpEZWM', icon: 'youtube' },
+    ],
     docs: [],
   },
 
@@ -56,7 +63,7 @@ const PROJECTS = [
     subtitle: 'Modelado y Simulación por Elementos Finitos',
     period: 'Otoño 2025',
     featured: true,
-    media: { type: 'image', src: 'assets/img/projects/fea.jpg' },
+    media: { type: 'youtube', src: 'https://www.youtube.com/embed/v-Rb78AgW5o', poster: 'assets/img/projects/fea.jpg' },
     summary: 'Análisis por elementos finitos de un caballete sometido a ensayo de tensión. Modelado de la geometría, definición de propiedades del material, condiciones de frontera y comparación de resultados de simulación con análisis analítico.',
     bullets: [
       'Modelo CAD y preparación de malla para FEA',
@@ -65,6 +72,9 @@ const PROJECTS = [
       'Interpretación de resultados y recomendaciones de diseño',
     ],
     tags: ['FEA', 'Simulación', 'Análisis estructural', 'CAE'],
+    links: [
+      { label: 'Video de la simulación', href: 'https://youtu.be/v-Rb78AgW5o', icon: 'youtube' },
+    ],
     docs: [],
   },
 
@@ -76,7 +86,7 @@ const PROJECTS = [
     subtitle: 'Control automático · Swing-up y estabilización',
     period: '2024',
     featured: false,
-    media: { type: 'video', src: 'assets/video/pendulo.mp4', poster: 'assets/img/projects/pendulo.jpg' },
+    media: { type: 'youtube', src: 'https://www.youtube.com/embed/37D0dcWb6ww', poster: 'assets/img/projects/pendulo.jpg' },
     summary: 'Sistema mecatrónico de péndulo invertido sobre carro. Diseño mecánico, electrónica y control implementados para llevar el péndulo desde el reposo hasta la vertical y mantenerlo estable ante perturbaciones.',
     bullets: [
       'Diseño mecánico del carro y riel; integración de motor + encoders',
@@ -84,6 +94,9 @@ const PROJECTS = [
       'Ajuste experimental hasta lograr estabilidad robusta',
     ],
     tags: ['Control', 'Mecatrónica', 'Encoders'],
+    links: [
+      { label: 'Video del péndulo', href: 'https://youtube.com/shorts/37D0dcWb6ww', icon: 'youtube' },
+    ],
     docs: [],
   },
 
@@ -93,7 +106,7 @@ const PROJECTS = [
     subtitle: 'Mecánica de fluidos · Cobre/agua vs aluminio/etilenglicol',
     period: 'Otoño 2024',
     featured: false,
-    media: { type: 'image', src: 'assets/img/projects/cfd.jpg' },
+    media: { type: 'image', src: 'assets/img/projects/cfd.png' },
     summary: 'Análisis térmico y dinámico de disipadores de calor de microcanales mediante simulación numérica en COMSOL y prototipo físico. Comparativa entre combinaciones material–fluido para gestión térmica eficiente.',
     bullets: [
       'Modelado 2D y 3D en COMSOL Multiphysics',
@@ -105,41 +118,7 @@ const PROJECTS = [
     docs: [],
   },
 
-  {
-    id: 'cinematica-brazo',
-    title: 'Cinemática directa e inversa de brazo robótico',
-    subtitle: 'Robótica · Análisis matemático y prototipo',
-    period: 'Verano 2025',
-    featured: false,
-    media: { type: 'image', src: 'assets/img/projects/brazo.jpg' },
-    summary: 'Desarrollo de un manipulador de 3+ articulaciones con análisis matemático completo de cinemática directa (posición del efector) e inversa (ángulos articulares para alcanzar coordenadas objetivo).',
-    bullets: [
-      'Modelo Denavit-Hartenberg del brazo',
-      'Cinemática directa e inversa resueltas analíticamente',
-      'Validación en prototipo físico con servos y microcontrolador',
-    ],
-    tags: ['Robótica', 'Cinemática', 'DH', 'Servos'],
-    docs: [],
-  },
-
   // =========== FILA 3 ===========
-
-  {
-    id: 'starter',
-    title: 'Motor de arranque (Starter) automotriz',
-    subtitle: 'Máquinas Eléctricas · Sistema electromecánico',
-    period: 'Otoño 2024',
-    featured: false,
-    media: { type: 'image', src: 'assets/img/projects/starter.jpg' },
-    summary: 'Diseño, ensamble y prueba de un sistema starter simplificado: motor de arranque, solenoide, mecanismo Bendix y circuitos de baja/media/alta potencia. Comprobación experimental de fenómenos electromecánicos reales.',
-    bullets: [
-      'Integración electromecánica completa (motor + solenoide + Bendix)',
-      'Diseño de circuitos con distintos niveles de corriente',
-      'Análisis de fallas: sobrecalentamiento, calibre de cable, fugas',
-    ],
-    tags: ['Máquinas eléctricas', 'Electromecánica', 'Automotriz'],
-    docs: [],
-  },
 
   {
     id: 'maquinas-electricas',
@@ -165,7 +144,7 @@ const PROJECTS = [
     subtitle: 'Análisis avanzado de circuitos · Proyecto físico funcional',
     period: '2024',
     featured: true,
-    media: { type: 'video', src: 'assets/video/vumetro.mp4', poster: 'assets/img/projects/vumetro.jpg' },
+    media: { type: 'youtube', src: 'https://www.youtube.com/embed/tWklRJPvJsY', poster: 'assets/img/projects/vumetro.jpg' },
     summary: 'Vúmetro físico construido a partir de un ecualizador de 3 bandas (bajas, medias y altas). La señal de audio se filtra por banda y cada banda enciende su propia columna de LEDs proporcional a la intensidad — visualización en tiempo real del contenido espectral del audio.',
     bullets: [
       'Ecualizador analógico de 3 bandas (paso bajo, pasa banda, paso alto) con OPAMPs',
@@ -174,41 +153,31 @@ const PROJECTS = [
       'Prototipo físico funcional — probado con audio en vivo',
     ],
     tags: ['Electrónica analógica', 'Filtros activos', 'OPAMPs', 'Audio', 'Hardware'],
-    docs: [],
-  },
-
-  {
-    id: 'ecualizador',
-    title: 'Ecualizador de 6 bandas · LabVIEW + Proteus',
-    subtitle: 'Análisis avanzado de circuitos · Versión digital',
-    period: '2024',
-    featured: false,
-    media: { type: 'image', src: 'assets/img/projects/ecualizador.jpg' },
-    summary: 'Segunda iteración del proyecto de ecualización: ampliación a 6 bandas con simulación completa en Proteus e interfaz gráfica en LabVIEW para control de ganancia por banda.',
-    bullets: [
-      'Diseño de filtros activos por banda con OPAMPs',
-      'Simulación completa del circuito en Proteus',
-      'Interfaz gráfica en LabVIEW para control de ganancias',
+    links: [
+      { label: 'Video del vúmetro', href: 'https://youtube.com/shorts/tWklRJPvJsY', icon: 'youtube' },
     ],
-    tags: ['LabVIEW', 'Proteus', 'Filtros activos', 'OPAMPs'],
     docs: [],
   },
 
   {
     id: 'embebidos',
-    title: 'Sistemas Embebidos: Raspberry Pi + Arduino + ESP32',
-    subtitle: 'Prácticas de laboratorio · Primavera 2025',
+    title: 'Control de motores DC vía Ethernet · Raspberry Pi + Arduino',
+    subtitle: 'Sistemas Embebidos · Práctica 6 · Primavera 2025',
     period: '2025',
-    featured: false,
-    media: { type: 'image', src: 'assets/img/projects/embebidos.jpg' },
-    summary: 'Serie de prácticas integrando Arduino, Raspberry Pi y ESP32 con comunicación entre dispositivos: control de servomotor por potenciómetro, motor DC con puente H y OLED, control remoto vía Ethernet y publicador/suscriptor con MQTT en la nube.',
+    featured: true,
+    media: { type: 'youtube', src: 'https://www.youtube.com/embed/7XP0mP8vdC4', poster: 'assets/img/projects/embebidos.jpg' },
+    summary: 'Sistema de control remoto para dos motores DC mediante comunicación Ethernet entre PC y Raspberry Pi. La computadora envía comandos JSON por sockets para controlar dirección, velocidad (PWM) y duración de forma independiente o simultánea, incluyendo paro de emergencia.',
     bullets: [
-      'Servo controlado por potenciómetro (Arduino → RPi vía UART) + LCD',
-      'Motor DC con puente H, PWM y display OLED',
-      'Control remoto de dos motores por Ethernet (sockets Python)',
-      'IoT: ESP32 + broker MQTT en la nube con sensor LDR',
+      'Comunicación PC ↔ Raspberry Pi por sockets TCP/IP (Ethernet)',
+      'Protocolo JSON para dirección, velocidad (PWM) y duración por motor',
+      'Puente H para inversión de giro y control de dos motores DC',
+      'Paro de emergencia y validación en video demostrativo',
     ],
-    tags: ['Raspberry Pi', 'Arduino', 'ESP32', 'MQTT', 'Python', 'IoT'],
+    tags: ['Raspberry Pi', 'Arduino', 'Python', 'Ethernet', 'Sockets', 'PWM'],
+    links: [
+      { label: 'Video de la práctica', href: 'https://youtu.be/7XP0mP8vdC4', icon: 'youtube' },
+    ],
+    extra: 'Como parte del mismo curso también desarrollé prácticas con servomotor + LCD (potenciómetro Arduino → RPi UART), control de motor DC con puente H y OLED, y un sistema IoT con ESP32 + broker MQTT en la nube.',
     docs: [],
   },
 
@@ -234,18 +203,23 @@ const PROJECTS = [
 
   {
     id: 'sensores',
-    title: 'Acondicionamiento de sensores resistivos',
-    subtitle: 'Sensores y acondicionamiento de señales',
-    period: 'Primavera 2026',
+    title: 'Acondicionamiento de galga extensiométrica',
+    subtitle: 'Sensores y acondicionamiento de señales · Primavera 2026',
+    period: '2026',
     featured: false,
-    media: { type: 'image', src: 'assets/img/projects/sensores.jpg' },
-    summary: 'Diseño de circuitos de acondicionamiento para tres tipos de sensores: galga extensiométrica (±2V para deformaciones), termistor NTC (5V–1V para 25–90°C) y DHT11 con display LCD + LabVIEW. Uso de puente de Wheatstone y OPAMPs.',
+    media: { type: 'youtube', src: 'https://www.youtube.com/embed/39RII9ifpcA', poster: 'assets/img/projects/sensores.jpg' },
+    summary: 'Diseño y construcción de la etapa de acondicionamiento de una galga extensiométrica: puente de Wheatstone + amplificación con OPAMPs para obtener ±2 V ante deformaciones positivas y negativas del elemento sensor.',
     bullets: [
-      'Galga: puente de Wheatstone + amplificación diferencial (±2V)',
-      'Termistor NTC: linealización + acondicionamiento a rango útil (1V–5V)',
-      'DHT11: adquisición digital con LCD y visualización en LabVIEW',
+      'Puente de Wheatstone para detectar variaciones mínimas de resistencia',
+      'Amplificación diferencial con OPAMPs (INA-style)',
+      'Salida ±2 V calibrada a deformaciones positivas y negativas',
+      'Prototipo físico validado en video',
     ],
-    tags: ['OPAMPs', 'Puente de Wheatstone', 'Sensores', 'LabVIEW'],
+    tags: ['OPAMPs', 'Puente de Wheatstone', 'Galga', 'Instrumentación'],
+    links: [
+      { label: 'Video del prototipo', href: 'https://youtube.com/shorts/39RII9ifpcA', icon: 'youtube' },
+    ],
+    extra: 'A lo largo del curso también acondicioné señales de termistores NTC, LDR, sensores piezoeléctricos y encoders.',
     docs: [],
   },
 
@@ -472,6 +446,12 @@ function projectCard(p) {
           )
         )
       )
+    );
+  }
+
+  if (p.extra) {
+    body.append(
+      el('p', { class: 'text-xs text-muted/80 italic leading-relaxed pt-2 border-t border-border/40 mt-1' }, p.extra)
     );
   }
 
