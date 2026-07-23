@@ -126,7 +126,7 @@ const PROJECTS = [
     subtitle: 'Construcción física de máquinas de inducción',
     period: 'Otoño 2024',
     featured: false,
-    media: { type: 'image', src: 'assets/img/projects/maquinas.jpg' },
+    media: { type: 'image', src: 'assets/img/projects/maquinas.png' },
     summary: 'Dos proyectos de construcción física: (1) transformador reductor 120V → 12V con relación 10:1 y (2) motor AC de inducción monofásico con rotor de jaula de ardilla. Devanados calculados y bobinados a mano.',
     bullets: [
       'Cálculo de espiras y sección del conductor por corriente',
@@ -165,7 +165,7 @@ const PROJECTS = [
     subtitle: 'Sistemas Embebidos · Práctica 6 · Primavera 2025',
     period: '2025',
     featured: true,
-    media: { type: 'youtube', src: 'https://www.youtube.com/embed/7XP0mP8vdC4', poster: 'assets/img/projects/embebidos.jpg' },
+    media: { type: 'youtube', src: 'https://www.youtube.com/embed/D1yS1jruapc', poster: 'assets/img/projects/embebidos.jpg' },
     summary: 'Sistema de control remoto para dos motores DC mediante comunicación Ethernet entre PC y Raspberry Pi. La computadora envía comandos JSON por sockets para controlar dirección, velocidad (PWM) y duración de forma independiente o simultánea, incluyendo paro de emergencia.',
     bullets: [
       'Comunicación PC ↔ Raspberry Pi por sockets TCP/IP (Ethernet)',
@@ -175,7 +175,7 @@ const PROJECTS = [
     ],
     tags: ['Raspberry Pi', 'Arduino', 'Python', 'Ethernet', 'Sockets', 'PWM'],
     links: [
-      { label: 'Video de la práctica', href: 'https://youtu.be/7XP0mP8vdC4', icon: 'youtube' },
+      { label: 'Video de la práctica', href: 'https://youtu.be/D1yS1jruapc', icon: 'youtube' },
     ],
     extra: 'Como parte del mismo curso también desarrollé prácticas con servomotor + LCD (potenciómetro Arduino → RPi UART), control de motor DC con puente H y OLED, y un sistema IoT con ESP32 + broker MQTT en la nube.',
     docs: [],
